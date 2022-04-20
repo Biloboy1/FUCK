@@ -74,7 +74,7 @@ def login():
 	try:
 		token = open("login.txt", "r")
 		menu()
-	except KeyError, Error:
+	except KeyError:
 		token = raw_input("[?] Enter Token : ")
 		if token == "":
 			print("Wrong Input")
